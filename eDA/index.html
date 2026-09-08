@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024, height=768, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ceftum Monsoon RTI eDA - July 2026</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="eda-container" id="edaContainer">
+
+    <!-- Veeva MT keep-outs -->
+    <div class="veeva-keepout-action" aria-hidden="true"></div>
+    <div class="veeva-keepout-reaction" aria-hidden="true"></div>
+    <div class="veeva-keepout-swim" aria-hidden="true"></div>
+
+    <!-- Content Frame -->
+    <div class="content-frame">
+      <div class="slides-wrapper" id="slidesWrapper">
+
+        <!-- ==========================================================================
+             CHAPTER 1: Initiating Ripples of Recovery
+             ========================================================================== -->
+
+        <!-- SLIDE 1 (Page 1): Chapter 1 Hub -->
+        <section class="slide active" id="slide-1">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_1.png" alt="Ceftum Monsoon Navigation Hub" class="slide-img">
+            <!-- 5 Interactive Chapter Bubbles -->
+            <div class="hotspot hs-bubble-1-ripples" onclick="openChapter(1);"
+              title="Initiating Ripples of Recovery (Pages 2-5)"></div>
+            <div class="hotspot hs-bubble-center" onclick="openChapter(3);"
+              title="A Case of URTI: Clinical Management (Pages 12-15)"></div>
+            <div class="hotspot hs-bubble-right" onclick="openChapter(2);"
+              title="A Case of Bacterial RTI and Treatment (Pages 7-10)"></div>
+            <div class="hotspot hs-bubble-4-aecopd" onclick="openChapter(4);" title="A Case of AECOPD (Pages 17-20)">
+            </div>
+            <div class="hotspot hs-bubble-5-thankyou" onclick="openChapter(5);" title="Thank You Doctor (Pages 22-23)">
+            </div>
+            <!-- Bottom Navigation Bar Hotspots -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 2 (Page 2): Subpage 1 of Chapter 1 -->
+        <section class="slide" id="slide-2">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_2.png" alt="In RTIs during monsoon" class="slide-img">
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 3 (Page 3): Subpage 2 of Chapter 1 -->
+        <section class="slide" id="slide-3">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_3.png" alt="This Monsoon, create the Legacy you can rely on!"
+              class="slide-img">
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 4 (Page 4): Subpage 3 of Chapter 1 -->
+        <section class="slide" id="slide-4">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_4.png" alt="Efficacy Pillars in RTIs" class="slide-img">
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 5 (Page 5): Prescribing Information & References -->
+        <section class="slide" id="slide-5">
+          <div class="pi-slide-wrapper">
+            <div class="pi-slide-card">
+              <div class="pi-slide-content">
+
+                <div class="pi-refs-block">
+                  <span class="pi-section-heading">References:</span>
+                  <ol>
+                    <li>Ceftum Tablets Prescribing Information_Version:CEF-CL-PI-IN-2026-01 revised on 24-JUL-2026.</li>
+                    <li>Timsit JF, Ling L, de Montmollin E, Bracht H, Conway-Morris A, De Bus L, Falcone M, Harris PNA,
+                      Machado FR, Paiva JA, Paterson DL, Poulakou G, Roberts JA, Roger C, Shorr AF, Tabah A, Lipman J.
+                      Antibiotic therapy for severe bacterial infections. <em>Intensive Care Med</em>. 2025
+                      Oct;51(10):1867-1885. doi: 10.1007/s00134-025-08063-0. Epub 2025 Sep 1. PMID: 40888899.</li>
+                    <li>Using medication: Learn More – Using antibiotics correctly and avoiding resistance. NIH
+                      bookshelf [Updated 2025 Dec 11]. Available at: https://www.ncbi.nlm.nih.gov/books/NBK361005/.
+                      Accessed on: 18-06-2026.</li>
+                    <li>Suresh M, Kumar MK. Expert opinion on the use of oral antibiotics with a special focus on
+                      amoxicillin-clavulanate and cefuroxime for the management of respiratory tract infections and
+                      otitis media in Indian settings. <em>Int J Curr Microbiol App Sci</em>. 2024;13(1):33-41.</li>
+                    <li>Omole AE, Awosika AO, Patel P. Cefuroxime. In: <em>StatPearls</em>. StatPearls Publishing; 2025.
+                      Updated January 11, 2024. Accessed January 30, 2026. Cefuroxime - StatPearls - NCBI Bookshelf</li>
+                    <li>Kaneria M, Ilamparthi M, Singh VN, et al. Position of oral cephalosporins and their fixed-dose
+                      combinations in the guideline recommendations for the management of community-acquired infections.
+                      <em>Asian J Med Sci</em>. 2023;14(9):281–291. doi:10.3126/ajms.v14i9.54674.</li>
+                    <li>Metlay JP, Waterer GW, Long AC, et al. Diagnosis and treatment of adults with community-acquired
+                      pneumonia. an official clinical practice guideline of the American Thoracic Society and Infectious
+                      Diseases Society of America. <em>Am J Respir Crit Care Med</em>. 2019;200(7):e45–e67.
+                      doi:10.1164/rccm.201908-1581ST</li>
+                    <li>Coughlin L. ACCP releases consensus statement on outpatient treatment for CAP. <em>Am Fam
+                        Physician</em>. 2005;72(8): 1607–1613.</li>
+                  </ol>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Key Safety Information for Ceftum:<sup>1</sup></span>
+                  <p><strong>Contraindications:</strong> Contraindicated in patients with known hypersensitivity to
+                    cephalosporin antibiotics. <strong>Special warnings and precautions for use:</strong> It should be
+                    administered with caution during the early months of pregnancy. Special care is indicated in
+                    patients who have experienced an allergic reaction to penicillins or other beta-lactams. Use of
+                    CEFTUM may result in the overgrowth of Candida. Prolonged use may also result in the overgrowth of
+                    other non-susceptible organisms (e.g. enterococci and Clostridium difficile), which may require
+                    interruption of treatment. In case of sequential therapy regime, if there is no clinical improvement
+                    within 72 hours, then the parenteral course of treatment must be continued. In patients with
+                    markedly renal impairment, dose needs to be adjusted. <strong>Undesirable effects:</strong> The most
+                    common (&ge;1/100 to &lt;1/10) side effects includes candida overgrowth, eosinophilia, headache,
+                    dizziness, gastrointestinal disturbances including diarrhoea, nausea, abdominal pain, transient
+                    increases of hepatic enzyme levels.</p>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Abbreviated Prescribing Information of CEFTUM TABLETS</span>
+                  <p style="font-weight:600; margin-bottom:3px;">(Cefuroxime Axetil Tablets IP 250/500mg)</p>
+                  <p><strong>ACTIVE INGREDIENTS:</strong> Each 250 mg, 500 mg film coated tablet contains cefuroxime (as
+                    cefuroxime axetil IP) 250 mg, 500 mg respectively.</p>
+                  <p><strong>THERAPEUTIC INDICATIONS:</strong> Cefuroxime axetil is an oral prodrug of the bactericidal
+                    cephalosporin antibiotic cefuroxime, which is resistant to most beta-lactamases and is active
+                    against a wide range of Gram-positive and Gram-negative organisms. It is indicated for the treatment
+                    of infections caused by susceptible bacteria. Susceptibility to cefuroxime axetil will vary with
+                    geography and time, and it should be used in accordance with local official antibiotic prescribing
+                    guidelines and local susceptibility data. <strong>Indications include:</strong> &bull; Upper
+                    respiratory tract infections (for example: ear, nose and throat infections, such as otitis media,
+                    sinusitis, tonsillitis and pharyngitis). &bull; Lower respiratory tract infections (for example:
+                    pneumonia, acute exacerbations of chronic obstructive pulmonary disease). &bull; Genito-urinary
+                    tract infections (for example: pyelonephritis, cystitis and urethritis). &bull; Skin and soft tissue
+                    infections (for example: furunculosis, pyoderma and impetigo). &bull; Gonorrhoea, acute
+                    uncomplicated gonococcal urethritis and cervicitis. Cefuroxime is also available as the sodium salt
+                    (SUPACEF) for parenteral administration. This permits the use of sequential therapy with the same
+                    antibiotic, when a change from parenteral to oral therapy is clinically indicated. Where appropriate
+                    CEFTUM (cefuroxime axetil) is effective when used following initial parenteral SUPACEF (cefuroxime
+                    sodium) in the treatment of pneumonia and acute exacerbations of chronic obstructive pulmonary
+                    disease.</p>
+                  <p><strong>POSOLOGY AND METHOD OF ADMINISTRATION:</strong> The usual course of therapy is seven days
+                    (range five to ten days). The duration of therapy should be determined by the type of infection and
+                    the response of the patient and should generally not be longer than recommended. CEFTUM tablets
+                    should be taken after food for optimum absorption. <strong>Adults and Children weighing more than 40
+                      kg:</strong> Acute tonsillitis and pharyngitis - 250 mg twice daily; Acute otitis media - 500 mg
+                    twice daily; Acute bacterial sinusitis, Acute exacerbations of chronic obstructive pulmonary disease
+                    and Community acquired pneumonia - 500 mg twice daily; Urinary tract infections – 250 - 500 mg twice
+                    daily; Uncomplicated gonorrhoea - single dose of 1,000 mg; Skin and soft tissue infections - 250 mg
+                    - 500 mg twice daily. <strong>Sequential therapy:</strong> Duration of both parenteral and oral
+                    therapy is determined by the severity of the infection and the clinical status of the patient.
+                    Pneumonia: 1,500 mg SUPACEF (cefuroxime sodium) three times a day or twice a day (intravenous [i.v.]
+                    or intramuscular [i.m.]) for 48 to 72 hours, followed by 500 mg twice a day CEFTUM oral therapy for
+                    7 to 10 days. Acute exacerbations of chronic obstructive pulmonary disease: 750 mg SUPACEF
+                    (cefuroxime sodium) three times a day or twice a day (i.v. or i.m.) for 48 to 72 hours, followed by
+                    500 mg twice a day CEFTUM oral therapy for 5 to 10 days. <strong>Children weighing between 20-40
+                      kg:</strong> CEFTUM tablets should not be crushed or split and are therefore unsuitable for
+                    treatment of patients, such as younger children, who cannot swallow whole tablets. Acute tonsillitis
+                    and pharyngitis - 250 mg twice daily; Acute otitis media, Acute bacterial sinusitis, Community
+                    acquired pneumonia, Urinary tract infections, Skin and soft tissue infections - 250 mg twice daily
+                    to 500 mg twice daily. <strong>Renal impairment:</strong> Cefuroxime is primarily excreted by the
+                    kidneys. In patients with markedly impaired renal function, it is recommended that the dosage of
+                    cefuroxime be reduced to compensate for its slower excretion. <strong>Hepatic impairment:</strong>
+                    There are no data available for patients with hepatic impairment. Since cefuroxime is primarily
+                    eliminated by the kidneys, the presence of hepatic dysfunction is expected to have no effect on the
+                    pharmacokinetics of cefuroxime.</p>
+                  <p><strong>CONTRAINDICATIONS:</strong> Known hypersensitivity to cephalosporin antibiotics.</p>
+                  <p><strong>SPECIAL WARNINGS AND PRECAUTIONS FOR USE: Hypersensitivity reactions:</strong> Special care
+                    is indicated in patients who have experienced an allergic reaction to penicillins or other
+                    beta-lactam antibiotics because there is a risk of cross-sensitivity. As with all beta-lactam
+                    antibacterial agents, serious and occasionally fatal hypersensitivity reactions have been reported.
+                    There have been reports of hypersensitivity reactions which progressed to Kounis syndrome (acute
+                    allergic coronary arteriospasm that can result in myocardial infarction). In case of severe
+                    hypersensitivity reactions, treatment with cefuroxime must be discontinued immediately and adequate
+                    emergency measures must be initiated. <strong>Overgrowth of non-susceptible microorganisms:</strong>
+                    As with other antibiotics, use of CEFTUM may result in the overgrowth of Candida. Prolonged use may
+                    also result in the overgrowth of other non-susceptible organisms (e.g. enterococci and Clostridium
+                    difficile), which may require interruption of treatment. Pseudomembranous colitis has been reported
+                    with the use of antibiotics and may range in severity from mild to life-threatening. Therefore, it
+                    is important to consider its diagnosis in patients who develop diarrhoea during or after antibiotic
+                    use. If prolonged or significant diarrhoea occurs or the patient experiences abdominal cramps,
+                    treatment should be discontinued immediately and the patient investigated further.
+                    <strong>Sequential therapy:</strong> With a sequential therapy regime, the timing of change to oral
+                    therapy is determined by severity of the infection, clinical status of the patient and
+                    susceptibility of the pathogens involved. If there is no clinical improvement within 72 hours, then
+                    the parenteral course of treatment must be continued.</p>
+                  <p><strong>UNDESIRABLE EFFECTS: Common (&ge;1/100 to &lt;1/10):</strong> Candida overgrowth,
+                    eosinophilia, headache, dizziness, gastrointestinal disturbances including diarrhoea, nausea,
+                    abdominal pain, transient increases of hepatic enzyme levels [ALT (SGPT), AST (SGOT), LDH].
+                    <strong>Uncommon (&ge;1/1000 to &lt;1/100):</strong> Positive Coombs’ test, thrombocytopenia,
+                    leukopenia (sometimes profound), skin rashes, vomiting. <strong>Rare (&ge;1/10,000 to
+                      &lt;1/1000):</strong> Urticaria, pruritus, pseudomembranous colitis. <strong>Very rare
+                      (&lt;1/10,000):</strong> Haemolytic anaemia, Kounis syndrome, drug fever, serum sickness,
+                    anaphylaxis, jaundice (predominantly cholestatic), hepatitis, erythema multiforme, Stevens-Johnson
+                    syndrome, toxic epidermal necrolysis (exanthematic necrolysis).</p>
+                </div>
+
+                <div class="pi-footer-note">
+                  <p><strong>CEF/API/IN updated 28 Jul 2026</strong></p>
+                  <p>For the use only of a registered medical practitioner or a hospital or a laboratory. Trademarks are
+                    owned by or licensed to the GSK group of companies. Refer to full prescribing information before
+                    use. Registered medical practitioners can refer company website <a
+                      href="http://india-pharma.gsk.com/en-in/products/prescribing-information/"
+                      target="_blank">http://india-pharma.gsk.com/en-in/products/prescribing-information/</a> for full
+                    Product Information. Please report adverse events with any GSK product to the company at <a
+                      href="mailto:india.pharmacovigilance@gsk.com">india.pharmacovigilance@gsk.com</a> &copy;2026 GSK
+                    group of companies or its licensor. For more information, please contact: GlaxoSmithKline
+                    Pharmaceuticals Limited, Dr. Annie Besant Road, Worli, Mumbai – 400030 (India).</p>
+                  <div class="pi-cl-row">
+                    <span>CL code: PM-IN-CFA-VID-260012 | Date of preparation: July 2026</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bottom Navigation Bar Hotspots on Slide -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             CHAPTER 2: A Case of Bacterial RTI and Treatment
+             ========================================================================== -->
+
+        <!-- SLIDE 6 (Page 6): Chapter 2 Hub -->
+        <section class="slide" id="slide-6">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_6.png" alt="Bacterial RTI Chapter Hub" class="slide-img">
+            <!-- 5 Interactive Chapter Bubbles -->
+            <div class="hotspot hs-bubble-1-ripples" onclick="openChapter(1);"
+              title="Initiating Ripples of Recovery (Pages 2-5)"></div>
+            <div class="hotspot hs-bubble-center" onclick="openChapter(3);"
+              title="A Case of URTI: Clinical Management (Pages 12-15)"></div>
+            <div class="hotspot hs-bubble-right" onclick="openChapter(2);"
+              title="A Case of Bacterial RTI and Treatment (Pages 7-10)"></div>
+            <div class="hotspot hs-bubble-4-aecopd" onclick="openChapter(4);" title="A Case of AECOPD (Pages 17-20)">
+            </div>
+            <div class="hotspot hs-bubble-5-thankyou" onclick="openChapter(5);" title="Thank You Doctor (Pages 22-23)">
+            </div>
+            <!-- Bottom Navigation Bar Hotspots -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 7 (Page 7): Subpage 1 of Chapter 2 -->
+        <section class="slide" id="slide-7">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_7.png" alt="Case 1: Rishi, 31 Years - Suspected Bacterial RTI"
+              class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 8 (Page 8): Subpage 2 of Chapter 2 -->
+        <section class="slide" id="slide-8">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_8.png" alt="Case 1 Evidence: S. pneumoniae & Avoid Clavulanate"
+              class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 9 (Page 9): Subpage 3 of Chapter 2 -->
+        <section class="slide" id="slide-9">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_9.png" alt="Case 1 Summary" class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 10 (Page 10): Prescribing Information & References -->
+        <section class="slide" id="slide-10">
+          <div class="pi-slide-wrapper">
+            <div class="pi-slide-card">
+              <div class="pi-slide-content">
+
+                <div class="pi-refs-block">
+                  <span class="pi-section-heading">References:</span>
+                  <ol>
+                    <li>Ceftum Tablets Prescribing Information_Version:CEF-CL-PI-IN-2026-01 revised on 24-JUL-2026.</li>
+                    <li>Balaji V, Singh V, Nijhara P, et al. Antimicrobial susceptibility patterns of <em>Haemophilus
+                        influenzae</em> and <em>Streptococcus pneumoniae</em> in respiratory tract infections: a
+                      retrospective observational real-world database study in India. <em>J Clin Diagn Res</em>.
+                      2025;19(2).</li>
+                    <li>Suresh M, Kumar MK. Expert opinion on the use of oral antibiotics with a special focus on
+                      amoxicillin-clavulanate and cefuroxime for the management of respiratory tract infections and
+                      otitis media in Indian settings. <em>Int J Curr Microbiol App Sci</em>. 2024;13(1):33-41.</li>
+                    <li>Omole AE, Awosika AO, Patel P. Cefuroxime. In: <em>StatPearls</em>. StatPearls Publishing; 2025.
+                      Updated January 11, 2024. Accessed January 30, 2026. Cefuroxime - StatPearls - NCBI Bookshelf</li>
+                    <li>Gupta H, Gupta R, Rai S, Kataria H, Jain V, Shankar V. Is empirical use of the antibiotic
+                      combination of cefuroxime and clavulanic acid rational? <em>J Glob Antimicrob Resist</em>. 2019
+                      Mar;16:150-151.</li>
+                    <li>Kaneria M, Ilamparthi M, Singh VN, et al. Position of oral cephalosporins and their fixed-dose
+                      combinations in the guideline recommendations for the management of community-acquired infections.
+                      <em>Asian J Med Sci</em>. 2023;14(9):281–291. doi:10.3126/ajms.v14i9.54674.</li>
+                    <li>Anand P, Kaur N, Verma V, Shafiq N, Malhotra S. Assessment of rationality of available fixed
+                      dose combinations of antibiotics in India. <em>Expert Rev Anti Infect Ther</em>. 2022
+                      May;20(5):797-808.</li>
+                    <li>Timsit JF, Ling L, de Montmollin E, Bracht H, Conway-Morris A, De Bus L, Falcone M, Harris PNA,
+                      Machado FR, Paiva JA, Paterson DL, Poulakou G, Roberts JA, Roger C, Shorr AF, Tabah A, Lipman J.
+                      Antibiotic therapy for severe bacterial infections. <em>Intensive Care Med</em>. 2025
+                      Oct;51(10):1867-1885. doi: 10.1007/s00134-025-08063-0. Epub 2025 Sep 1. PMID: 40888899.</li>
+                    <li>Using medication: Learn More – Using antibiotics correctly and avoiding resistance. NIH
+                      bookshelf [Updated 2025 Dec 11]. Available at: Using medication: Learn More – Using antibiotics
+                      correctly and avoiding resistance - InformedHealth.… Accessed on: 18-06-2026.</li>
+                  </ol>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Key Safety Information for Ceftum:<sup>1</sup></span>
+                  <p><strong>Contraindications:</strong> Contraindicated in patients with known hypersensitivity to
+                    cephalosporin antibiotics. <strong>Special warnings and precautions for use:</strong> It should be
+                    administered with caution during the early months of pregnancy. Special care is indicated in
+                    patients who have experienced an allergic reaction to penicillins or other beta-lactams. Use of
+                    CEFTUM may result in the overgrowth of Candida. Prolonged use may also result in the overgrowth of
+                    other non-susceptible organisms (e.g. enterococci and Clostridium difficile), which may require
+                    interruption of treatment. In case of sequential therapy regime, if there is no clinical improvement
+                    within 72 hours, then the parenteral course of treatment must be continued. In patients with
+                    markedly renal impairment, dose needs to be adjusted. <strong>Undesirable effects:</strong> The most
+                    common (&ge;1/100 to &lt;1/10) side effects includes candida overgrowth, eosinophilia, headache,
+                    dizziness, gastrointestinal disturbances including diarrhoea, nausea, abdominal pain, transient
+                    increases of hepatic enzyme levels.</p>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Abbreviated Prescribing Information of CEFTUM TABLETS</span>
+                  <p style="font-weight:600; margin-bottom:3px;">(Cefuroxime Axetil Tablets IP 250/500mg)</p>
+                  <p><strong>ACTIVE INGREDIENTS:</strong> Each 250 mg, 500 mg film coated tablet contains cefuroxime (as
+                    cefuroxime axetil IP) 250 mg, 500 mg respectively.</p>
+                  <p><strong>THERAPEUTIC INDICATIONS:</strong> Cefuroxime axetil is an oral prodrug of the bactericidal
+                    cephalosporin antibiotic cefuroxime, which is resistant to most beta-lactamases and is active
+                    against a wide range of Gram-positive and Gram-negative organisms. It is indicated for the treatment
+                    of infections caused by susceptible bacteria. Susceptibility to cefuroxime axetil will vary with
+                    geography and time, and it should be used in accordance with local official antibiotic prescribing
+                    guidelines and local susceptibility data. <strong>Indications include:</strong> &bull; Upper
+                    respiratory tract infections (for example: ear, nose and throat infections, such as otitis media,
+                    sinusitis, tonsillitis and pharyngitis). &bull; Lower respiratory tract infections (for example:
+                    pneumonia, acute exacerbations of chronic obstructive pulmonary disease). &bull; Genito-urinary
+                    tract infections (for example: pyelonephritis, cystitis and urethritis). &bull; Skin and soft tissue
+                    infections (for example: furunculosis, pyoderma and impetigo). &bull; Gonorrhoea, acute
+                    uncomplicated gonococcal urethritis and cervicitis. Cefuroxime is also available as the sodium salt
+                    (SUPACEF) for parenteral administration. This permits the use of sequential therapy with the same
+                    antibiotic, when a change from parenteral to oral therapy is clinically indicated. Where appropriate
+                    CEFTUM (cefuroxime axetil) is effective when used following initial parenteral SUPACEF (cefuroxime
+                    sodium) in the treatment of pneumonia and acute exacerbations of chronic obstructive pulmonary
+                    disease.</p>
+                  <p><strong>POSOLOGY AND METHOD OF ADMINISTRATION:</strong> The usual course of therapy is seven days
+                    (range five to ten days). The duration of therapy should be determined by the type of infection and
+                    the response of the patient and should generally not be longer than recommended. CEFTUM tablets
+                    should be taken after food for optimum absorption. <strong>Adults and Children weighing more than 40
+                      kg:</strong> Acute tonsillitis and pharyngitis - 250 mg twice daily; Acute otitis media - 500 mg
+                    twice daily; Acute bacterial sinusitis, Acute exacerbations of chronic obstructive pulmonary disease
+                    and Community acquired pneumonia - 500 mg twice daily; Urinary tract infections – 250 - 500 mg twice
+                    daily; Uncomplicated gonorrhoea - single dose of 1,000 mg; Skin and soft tissue infections - 250 mg
+                    - 500 mg twice daily. <strong>Sequential therapy:</strong> Duration of both parenteral and oral
+                    therapy is determined by the severity of the infection and the clinical status of the patient.
+                    Pneumonia: 1,500 mg SUPACEF (cefuroxime sodium) three times a day or twice a day (intravenous [i.v.]
+                    or intramuscular [i.m.]) for 48 to 72 hours, followed by 500 mg twice a day CEFTUM oral therapy for
+                    7 to 10 days. Acute exacerbations of chronic obstructive pulmonary disease: 750 mg SUPACEF
+                    (cefuroxime sodium) three times a day or twice a day (i.v. or i.m.) for 48 to 72 hours, followed by
+                    500 mg twice a day CEFTUM oral therapy for 5 to 10 days. <strong>Children weighing between 20-40
+                      kg:</strong> CEFTUM tablets should not be crushed or split and are therefore unsuitable for
+                    treatment of patients, such as younger children, who cannot swallow whole tablets. Acute tonsillitis
+                    and pharyngitis - 250 mg twice daily; Acute otitis media, Acute bacterial sinusitis, Community
+                    acquired pneumonia, Urinary tract infections, Skin and soft tissue infections - 250 mg twice daily
+                    to 500 mg twice daily. <strong>Renal impairment:</strong> Cefuroxime is primarily excreted by the
+                    kidneys. In patients with markedly impaired renal function, it is recommended that the dosage of
+                    cefuroxime be reduced to compensate for its slower excretion. <strong>Hepatic impairment:</strong>
+                    There are no data available for patients with hepatic impairment. Since cefuroxime is primarily
+                    eliminated by the kidneys, the presence of hepatic dysfunction is expected to have no effect on the
+                    pharmacokinetics of cefuroxime.</p>
+                  <p><strong>CONTRAINDICATIONS:</strong> Known hypersensitivity to cephalosporin antibiotics.</p>
+                  <p><strong>SPECIAL WARNINGS AND PRECAUTIONS FOR USE: Hypersensitivity reactions:</strong> Special care
+                    is indicated in patients who have experienced an allergic reaction to penicillins or other
+                    beta-lactam antibiotics because there is a risk of cross-sensitivity. As with all beta-lactam
+                    antibacterial agents, serious and occasionally fatal hypersensitivity reactions have been reported.
+                    There have been reports of hypersensitivity reactions which progressed to Kounis syndrome (acute
+                    allergic coronary arteriospasm that can result in myocardial infarction). In case of severe
+                    hypersensitivity reactions, treatment with cefuroxime must be discontinued immediately and adequate
+                    emergency measures must be initiated. <strong>Overgrowth of non-susceptible microorganisms:</strong>
+                    As with other antibiotics, use of CEFTUM may result in the overgrowth of Candida. Prolonged use may
+                    also result in the overgrowth of other non-susceptible organisms (e.g. enterococci and Clostridium
+                    difficile), which may require interruption of treatment. Pseudomembranous colitis has been reported
+                    with the use of antibiotics and may range in severity from mild to life-threatening. Therefore, it
+                    is important to consider its diagnosis in patients who develop diarrhoea during or after antibiotic
+                    use. If prolonged or significant diarrhoea occurs or the patient experiences abdominal cramps,
+                    treatment should be discontinued immediately and the patient investigated further.
+                    <strong>Sequential therapy:</strong> With a sequential therapy regime, the timing of change to oral
+                    therapy is determined by severity of the infection, clinical status of the patient and
+                    susceptibility of the pathogens involved. If there is no clinical improvement within 72 hours, then
+                    the parenteral course of treatment must be continued.</p>
+                  <p><strong>UNDESIRABLE EFFECTS: Common (&ge;1/100 to &lt;1/10):</strong> Candida overgrowth,
+                    eosinophilia, headache, dizziness, gastrointestinal disturbances including diarrhoea, nausea,
+                    abdominal pain, transient increases of hepatic enzyme levels [ALT (SGPT), AST (SGOT), LDH].
+                    <strong>Uncommon (&ge;1/1000 to &lt;1/100):</strong> Positive Coombs’ test, thrombocytopenia,
+                    leukopenia (sometimes profound), skin rashes, vomiting. <strong>Rare (&ge;1/10,000 to
+                      &lt;1/1000):</strong> Urticaria, pruritus, pseudomembranous colitis. <strong>Very rare
+                      (&lt;1/10,000):</strong> Haemolytic anaemia, Kounis syndrome, drug fever, serum sickness,
+                    anaphylaxis, jaundice (predominantly cholestatic), hepatitis, erythema multiforme, Stevens-Johnson
+                    syndrome, toxic epidermal necrolysis (exanthematic necrolysis).</p>
+                </div>
+
+                <div class="pi-footer-note">
+                  <p><strong>CEF/API/IN updated 28 Jul 2026</strong></p>
+                  <p>For the use only of a registered medical practitioner or a hospital or a laboratory. Trademarks are
+                    owned by or licensed to the GSK group of companies. Refer to full prescribing information before
+                    use. Registered medical practitioners can refer company website <a
+                      href="http://india-pharma.gsk.com/en-in/products/prescribing-information/"
+                      target="_blank">http://india-pharma.gsk.com/en-in/products/prescribing-information/</a> for full
+                    Product Information. Please report adverse events with any GSK product to the company at <a
+                      href="mailto:india.pharmacovigilance@gsk.com">india.pharmacovigilance@gsk.com</a> &copy;2026 GSK
+                    group of companies or its licensor. For more information, please contact: GlaxoSmithKline
+                    Pharmaceuticals Limited, Dr. Annie Besant Road, Worli, Mumbai – 400030 (India).</p>
+                  <div class="pi-cl-row">
+                    <span>CL code: PM-IN-CFA-EDTL-260004 | Date of preparation: July 2026</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bottom Navigation Bar Hotspots on Slide -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             CHAPTER 3: A Case of URTI: Clinical Management
+             ========================================================================== -->
+
+        <!-- SLIDE 11 (Page 11): Chapter 3 Hub -->
+        <section class="slide" id="slide-11">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_11.png" alt="URTI Sinusitis Chapter Hub" class="slide-img">
+            <!-- 5 Interactive Chapter Bubbles -->
+            <div class="hotspot hs-bubble-1-ripples" onclick="openChapter(1);"
+              title="Initiating Ripples of Recovery (Pages 2-5)"></div>
+            <div class="hotspot hs-bubble-center" onclick="openChapter(3);"
+              title="A Case of URTI: Clinical Management (Pages 12-15)"></div>
+            <div class="hotspot hs-bubble-right" onclick="openChapter(2);"
+              title="A Case of Bacterial RTI and Treatment (Pages 7-10)"></div>
+            <div class="hotspot hs-bubble-4-aecopd" onclick="openChapter(4);" title="A Case of AECOPD (Pages 17-20)">
+            </div>
+            <div class="hotspot hs-bubble-5-thankyou" onclick="openChapter(5);" title="Thank You Doctor (Pages 22-23)">
+            </div>
+            <!-- Bottom Navigation Bar Hotspots -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 12 (Page 12): Subpage 1 of Chapter 3 -->
+        <section class="slide" id="slide-12">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_12.png" alt="Case 2: Jay, 37 Years - Acute Bacterial Sinusitis"
+              class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 13 (Page 13): Subpage 2 of Chapter 3 -->
+        <section class="slide" id="slide-13">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_13.png" alt="Case 2 Evidence: Sinusitis Trials" class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 14 (Page 14): Subpage 3 of Chapter 3 -->
+        <section class="slide" id="slide-14">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_14.png" alt="Case 2 Summary" class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 15 (Page 15): Prescribing Information & References -->
+        <section class="slide" id="slide-15">
+          <div class="pi-slide-wrapper">
+            <div class="pi-slide-card">
+              <div class="pi-slide-content">
+
+                <div class="pi-refs-block">
+                  <span class="pi-section-heading">References:</span>
+                  <ol>
+                    <li>Ceftum Tablets Prescribing Information_Version:CEF-CL-PI-IN-2026-01 revised on 24-JUL-2026.</li>
+                    <li>Pakes GE, Graham JA, Rauch AM, Collins JJ. Cefuroxime axetil in the treatment of sinusitis. A
+                      review. <em>Arch Fam Med</em>. 1994;3(2):165-175.</li>
+                    <li>Gupta H, Gupta R, Rai S, Kataria H, Jain V, Shankar V. Is empirical use of the antibiotic
+                      combination of cefuroxime and clavulanic acid rational? <em>J Glob Antimicrob Resist</em>. 2019
+                      Mar;16:150-151.</li>
+                    <li>Kaneria M, Ilamparthi M, Singh VN, et al. Position of oral cephalosporins and their fixed-dose
+                      combinations in the guideline recommendations for the management of community-acquired infections.
+                      <em>Asian J Med Sci</em>. 2023;14(9):281–291. doi:10.3126/ajms.v14i9.54674.</li>
+                    <li>Anand P, Kaur N, Verma V, Shafiq N, Malhotra S. Assessment of rationality of available fixed
+                      dose combinations of antibiotics in India. <em>Expert Rev Anti Infect Ther</em>. 2022
+                      May;20(5):797-808.</li>
+                    <li>Timsit JF, Ling L, de Montmollin E, Bracht H, Conway-Morris A, De Bus L, Falcone M, Harris PNA,
+                      Machado FR, Paiva JA, Paterson DL, Poulakou G, Roberts JA, Roger C, Shorr AF, Tabah A, Lipman J.
+                      Antibiotic therapy for severe bacterial infections. <em>Intensive Care Med</em>. 2025.</li>
+                    <li>Using medication: Learn More – Using antibiotics correctly and avoiding resistance. NIH
+                      bookshelf [Updated 2025 Dec 11]. Available at: Using medication: Learn More – Using antibiotics
+                      correctly and avoiding resistance - InformedHealth.… Accessed on: 18-06-2026.</li>
+                  </ol>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Key Safety Information for Ceftum:<sup>1</sup></span>
+                  <p><strong>Contraindications:</strong> Contraindicated in patients with known hypersensitivity to
+                    cephalosporin antibiotics. <strong>Special warnings and precautions for use:</strong> It should be
+                    administered with caution during the early months of pregnancy. Special care is indicated in
+                    patients who have experienced an allergic reaction to penicillins or other beta-lactams. Use of
+                    CEFTUM may result in the overgrowth of Candida. Prolonged use may also result in the overgrowth of
+                    other non-susceptible organisms (e.g. enterococci and Clostridium difficile), which may require
+                    interruption of treatment. In case of sequential therapy regime, if there is no clinical improvement
+                    within 72 hours, then the parenteral course of treatment must be continued. In patients with
+                    markedly renal impairment, dose needs to be adjusted. <strong>Undesirable effects:</strong> The most
+                    common (&ge;1/100 to &lt;1/10) side effects includes candida overgrowth, eosinophilia, headache,
+                    dizziness, gastrointestinal disturbances including diarrhoea, nausea, abdominal pain, transient
+                    increases of hepatic enzyme levels.</p>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Abbreviated Prescribing Information of CEFTUM TABLETS</span>
+                  <p style="font-weight:600; margin-bottom:3px;">(Cefuroxime Axetil Tablets IP 250/500mg)</p>
+                  <p><strong>ACTIVE INGREDIENTS:</strong> Each 250 mg, 500 mg film coated tablet contains cefuroxime (as
+                    cefuroxime axetil IP) 250 mg, 500 mg respectively.</p>
+                  <p><strong>THERAPEUTIC INDICATIONS:</strong> Cefuroxime axetil is an oral prodrug of the bactericidal
+                    cephalosporin antibiotic cefuroxime, which is resistant to most beta-lactamases and is active
+                    against a wide range of Gram-positive and Gram-negative organisms. It is indicated for the treatment
+                    of infections caused by susceptible bacteria. Susceptibility to cefuroxime axetil will vary with
+                    geography and time, and it should be used in accordance with local official antibiotic prescribing
+                    guidelines and local susceptibility data. <strong>Indications include:</strong> &bull; Upper
+                    respiratory tract infections (for example: ear, nose and throat infections, such as otitis media,
+                    sinusitis, tonsillitis and pharyngitis). &bull; Lower respiratory tract infections (for example:
+                    pneumonia, acute exacerbations of chronic obstructive pulmonary disease). &bull; Genito-urinary
+                    tract infections (for example: pyelonephritis, cystitis and urethritis). &bull; Skin and soft tissue
+                    infections (for example: furunculosis, pyoderma and impetigo). &bull; Gonorrhoea, acute
+                    uncomplicated gonococcal urethritis and cervicitis. Cefuroxime is also available as the sodium salt
+                    (SUPACEF) for parenteral administration. This permits the use of sequential therapy with the same
+                    antibiotic, when a change from parenteral to oral therapy is clinically indicated. Where appropriate
+                    CEFTUM (cefuroxime axetil) is effective when used following initial parenteral SUPACEF (cefuroxime
+                    sodium) in the treatment of pneumonia and acute exacerbations of chronic obstructive pulmonary
+                    disease.</p>
+                  <p><strong>POSOLOGY AND METHOD OF ADMINISTRATION:</strong> The usual course of therapy is seven days
+                    (range five to ten days). The duration of therapy should be determined by the type of infection and
+                    the response of the patient and should generally not be longer than recommended. CEFTUM tablets
+                    should be taken after food for optimum absorption. <strong>Adults and Children weighing more than 40
+                      kg:</strong> Acute tonsillitis and pharyngitis - 250 mg twice daily; Acute otitis media - 500 mg
+                    twice daily; Acute bacterial sinusitis, Acute exacerbations of chronic obstructive pulmonary disease
+                    and Community acquired pneumonia - 500 mg twice daily; Urinary tract infections – 250 - 500 mg twice
+                    daily; Uncomplicated gonorrhoea - single dose of 1,000 mg; Skin and soft tissue infections - 250 mg
+                    - 500 mg twice daily. <strong>Sequential therapy:</strong> Duration of both parenteral and oral
+                    therapy is determined by the severity of the infection and the clinical status of the patient.
+                    Pneumonia: 1,500 mg SUPACEF (cefuroxime sodium) three times a day or twice a day (intravenous [i.v.]
+                    or intramuscular [i.m.]) for 48 to 72 hours, followed by 500 mg twice a day CEFTUM oral therapy for
+                    7 to 10 days. Acute exacerbations of chronic obstructive pulmonary disease: 750 mg SUPACEF
+                    (cefuroxime sodium) three times a day or twice a day (i.v. or i.m.) for 48 to 72 hours, followed by
+                    500 mg twice a day CEFTUM oral therapy for 5 to 10 days. <strong>Children weighing between 20-40
+                      kg:</strong> CEFTUM tablets should not be crushed or split and are therefore unsuitable for
+                    treatment of patients, such as younger children, who cannot swallow whole tablets. Acute tonsillitis
+                    and pharyngitis - 250 mg twice daily; Acute otitis media, Acute bacterial sinusitis, Community
+                    acquired pneumonia, Urinary tract infections, Skin and soft tissue infections - 250 mg twice daily
+                    to 500 mg twice daily. <strong>Renal impairment:</strong> Cefuroxime is primarily excreted by the
+                    kidneys. In patients with markedly impaired renal function, it is recommended that the dosage of
+                    cefuroxime be reduced to compensate for its slower excretion. <strong>Hepatic impairment:</strong>
+                    There are no data available for patients with hepatic impairment. Since cefuroxime is primarily
+                    eliminated by the kidneys, the presence of hepatic dysfunction is expected to have no effect on the
+                    pharmacokinetics of cefuroxime.</p>
+                  <p><strong>CONTRAINDICATIONS:</strong> Known hypersensitivity to cephalosporin antibiotics.</p>
+                  <p><strong>SPECIAL WARNINGS AND PRECAUTIONS FOR USE: Hypersensitivity reactions:</strong> Special care
+                    is indicated in patients who have experienced an allergic reaction to penicillins or other
+                    beta-lactam antibiotics because there is a risk of cross-sensitivity. As with all beta-lactam
+                    antibacterial agents, serious and occasionally fatal hypersensitivity reactions have been reported.
+                    There have been reports of hypersensitivity reactions which progressed to Kounis syndrome (acute
+                    allergic coronary arteriospasm that can result in myocardial infarction). In case of severe
+                    hypersensitivity reactions, treatment with cefuroxime must be discontinued immediately and adequate
+                    emergency measures must be initiated. <strong>Overgrowth of non-susceptible microorganisms:</strong>
+                    As with other antibiotics, use of CEFTUM may result in the overgrowth of Candida. Prolonged use may
+                    also result in the overgrowth of other non-susceptible organisms (e.g. enterococci and Clostridium
+                    difficile), which may require interruption of treatment. Pseudomembranous colitis has been reported
+                    with the use of antibiotics and may range in severity from mild to life-threatening. Therefore, it
+                    is important to consider its diagnosis in patients who develop diarrhoea during or after antibiotic
+                    use. If prolonged or significant diarrhoea occurs or the patient experiences abdominal cramps,
+                    treatment should be discontinued immediately and the patient investigated further.
+                    <strong>Sequential therapy:</strong> With a sequential therapy regime, the timing of change to oral
+                    therapy is determined by severity of the infection, clinical status of the patient and
+                    susceptibility of the pathogens involved. If there is no clinical improvement within 72 hours, then
+                    the parenteral course of treatment must be continued.</p>
+                  <p><strong>UNDESIRABLE EFFECTS: Common (&ge;1/100 to &lt;1/10):</strong> Candida overgrowth,
+                    eosinophilia, headache, dizziness, gastrointestinal disturbances including diarrhoea, nausea,
+                    abdominal pain, transient increases of hepatic enzyme levels [ALT (SGPT), AST (SGOT), LDH].
+                    <strong>Uncommon (&ge;1/1000 to &lt;1/100):</strong> Positive Coombs’ test, thrombocytopenia,
+                    leukopenia (sometimes profound), skin rashes, vomiting. <strong>Rare (&ge;1/10,000 to
+                      &lt;1/1000):</strong> Urticaria, pruritus, pseudomembranous colitis. <strong>Very rare
+                      (&lt;1/10,000):</strong> Haemolytic anaemia, Kounis syndrome, drug fever, serum sickness,
+                    anaphylaxis, jaundice (predominantly cholestatic), hepatitis, erythema multiforme, Stevens-Johnson
+                    syndrome, toxic epidermal necrolysis (exanthematic necrolysis).</p>
+                </div>
+
+                <div class="pi-footer-note">
+                  <p><strong>CEF/API/IN updated 28 Jul 2026</strong></p>
+                  <p>For the use only of a registered medical practitioner or a hospital or a laboratory. Trademarks are
+                    owned by or licensed to the GSK group of companies. Refer to full prescribing information before
+                    use. Registered medical practitioners can refer company website <a
+                      href="http://india-pharma.gsk.com/en-in/products/prescribing-information/"
+                      target="_blank">http://india-pharma.gsk.com/en-in/products/prescribing-information/</a> for full
+                    Product Information. Please report adverse events with any GSK product to the company at <a
+                      href="mailto:india.pharmacovigilance@gsk.com">india.pharmacovigilance@gsk.com</a> &copy;2026 GSK
+                    group of companies or its licensor. For more information, please contact: GlaxoSmithKline
+                    Pharmaceuticals Limited, Dr. Annie Besant Road, Worli, Mumbai – 400030 (India).</p>
+                  <div class="pi-cl-row">
+                    <span>CL code: PM-IN-CFA-EDTL-260004 | Date of preparation: July 2026</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bottom Navigation Bar Hotspots on Slide -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             CHAPTER 4: A Case of AECOPD
+             ========================================================================== -->
+
+        <!-- SLIDE 16 (Page 16): Chapter 4 Hub -->
+        <section class="slide" id="slide-16">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_16.png" alt="AECOPD Chapter Hub" class="slide-img">
+            <!-- 5 Interactive Chapter Bubbles -->
+            <div class="hotspot hs-bubble-1-ripples" onclick="openChapter(1);"
+              title="Initiating Ripples of Recovery (Pages 2-5)"></div>
+            <div class="hotspot hs-bubble-center" onclick="openChapter(3);"
+              title="A Case of URTI: Clinical Management (Pages 12-15)"></div>
+            <div class="hotspot hs-bubble-right" onclick="openChapter(2);"
+              title="A Case of Bacterial RTI and Treatment (Pages 7-10)"></div>
+            <div class="hotspot hs-bubble-4-aecopd" onclick="openChapter(4);" title="A Case of AECOPD (Pages 17-20)">
+            </div>
+            <div class="hotspot hs-bubble-5-thankyou" onclick="openChapter(5);" title="Thank You Doctor (Pages 22-23)">
+            </div>
+            <!-- Bottom Navigation Bar Hotspots -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 17 (Page 17): Subpage 1 of Chapter 4 -->
+        <section class="slide" id="slide-17">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_17.png" alt="Case 3: Kunal, 40 Years - AECOPD" class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 18 (Page 18): Subpage 2 of Chapter 4 -->
+        <section class="slide" id="slide-18">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_18.png" alt="Case 3 Evidence: AECOPD vs Azithromycin" class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 19 (Page 19): Subpage 3 of Chapter 4 -->
+        <section class="slide" id="slide-19">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_19.png" alt="Case 3 Summary" class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 20 (Page 20): Prescribing Information & References -->
+        <section class="slide" id="slide-20">
+          <div class="pi-slide-wrapper">
+            <div class="pi-slide-card">
+              <div class="pi-slide-content">
+
+                <div class="pi-refs-block">
+                  <span class="pi-section-heading">References:</span>
+                  <ol>
+                    <li>Ceftum Tablets Prescribing Information_Version:CEF-CL-PI-IN-2026-01 revised on 24-JUL-2026.</li>
+                    <li>Prasad P, Bhat S. Clinicomicrobiological study of community-acquired pneumonia. <em>Lung
+                        India</em>. 2017;34(5):491-492. doi:10.4103/lungindia.lungindia_89_17</li>
+                    <li>Suresh M, Kumar MK. Expert opinion on the use of oral antibiotics with a special focus on
+                      amoxicillin-clavulanate and cefuroxime for the management of respiratory tract infections and
+                      otitis media in Indian settings. <em>Int J Curr Microbiol App Sci</em>. 2024;13(1):33-41.</li>
+                    <li>Omole AE, Awosika AO, Patel P. Cefuroxime. In: <em>StatPearls</em>. StatPearls Publishing; 2025.
+                      Updated January 11, 2024. Accessed January 30, 2026. https://www.ncbi.nlm.nih.gov/books/NBK599503/
+                    </li>
+                    <li>National Centre for Disease Control (NCDC). National Treatment Guidelines for Antimicrobial Use
+                      in Infectious Diseases. 3rd ed. Ministry of Health and Family Welfare, Government of India; 2025.
+                      Accessed January 7, 2026.
+                      https://ncdc.mohfw.gov.in/wp-content/uploads/2025/08/NTG-Version-31st-July-final.pdf</li>
+                    <li>Gupta H, Gupta R, Rai S, Kataria H, Jain V, Shankar V. Is empirical use of the antibiotic
+                      combination of cefuroxime and clavulanic acid rational? <em>J Glob Antimicrob Resist</em>. 2019
+                      Mar;16:150-151.</li>
+                    <li>Kaneria M, Ilamparthi M, Singh VN, et al. Position of oral cephalosporins and their fixed-dose
+                      combinations in the guideline recommendations for the management of community-acquired infections.
+                      <em>Asian J Med Sci</em>. 2023;14(9):281–291. doi:10.3126/ajms.v14i9.54674.</li>
+                    <li>Anand P, Kaur N, Verma V, Shafiq N, Malhotra S. Assessment of rationality of available fixed
+                      dose combinations of antibiotics in India. <em>Expert Rev Anti Infect Ther</em>. 2022
+                      May;20(5):797-808.</li>
+                    <li>Timsit JF, Ling L, de Montmollin E, Bracht H, Conway-Morris A, De Bus L, Falcone M, Harris PNA,
+                      Machado FR, Paiva JA, Paterson DL, Poulakou G, Roberts JA, Roger C, Shorr AF, Tabah A, Lipman J.
+                      Antibiotic therapy for severe bacterial infections. <em>Intensive Care Med</em>. 2025
+                      Oct;51(10):1867-1885. doi: 10.1007/s00134-025-08063-0. Epub 2025 Sep 1. PMID: 40888899.</li>
+                    <li>Using medication: Learn More – Using antibiotics correctly and avoiding resistance. NIH
+                      bookshelf [Updated 2025 Dec 11]. Available at: https://www.ncbi.nlm.nih.gov/books/NBK361005/.
+                      Accessed on: 18-06-2026.</li>
+                  </ol>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Key Safety Information for Ceftum:<sup>1</sup></span>
+                  <p><strong>Contraindications:</strong> Contraindicated in patients with known hypersensitivity to
+                    cephalosporin antibiotics. <strong>Special warnings and precautions for use:</strong> It should be
+                    administered with caution during the early months of pregnancy. Special care is indicated in
+                    patients who have experienced an allergic reaction to penicillins or other beta-lactams. Use of
+                    CEFTUM may result in the overgrowth of Candida. Prolonged use may also result in the overgrowth of
+                    other non-susceptible organisms (e.g. enterococci and Clostridium difficile), which may require
+                    interruption of treatment. In case of sequential therapy regime, if there is no clinical improvement
+                    within 72 hours, then the parenteral course of treatment must be continued. In patients with
+                    markedly renal impairment, dose needs to be adjusted. <strong>Undesirable effects:</strong> The most
+                    common (&ge;1/100 to &lt;1/10) side effects includes candida overgrowth, eosinophilia, headache,
+                    dizziness, gastrointestinal disturbances including diarrhoea, nausea, abdominal pain, transient
+                    increases of hepatic enzyme levels.</p>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Abbreviated Prescribing Information of CEFTUM TABLETS</span>
+                  <p style="font-weight:600; margin-bottom:3px;">(Cefuroxime Axetil Tablets IP 250/500mg)</p>
+                  <p><strong>ACTIVE INGREDIENTS:</strong> Each 250 mg, 500 mg film coated tablet contains cefuroxime (as
+                    cefuroxime axetil IP) 250 mg, 500 mg respectively.</p>
+                  <p><strong>THERAPEUTIC INDICATIONS:</strong> Cefuroxime axetil is an oral prodrug of the bactericidal
+                    cephalosporin antibiotic cefuroxime, which is resistant to most beta-lactamases and is active
+                    against a wide range of Gram-positive and Gram-negative organisms. It is indicated for the treatment
+                    of infections caused by susceptible bacteria. Susceptibility to cefuroxime axetil will vary with
+                    geography and time, and it should be used in accordance with local official antibiotic prescribing
+                    guidelines and local susceptibility data. <strong>Indications include:</strong> &bull; Upper
+                    respiratory tract infections (for example: ear, nose and throat infections, such as otitis media,
+                    sinusitis, tonsillitis and pharyngitis). &bull; Lower respiratory tract infections (for example:
+                    pneumonia, acute exacerbations of chronic obstructive pulmonary disease). &bull; Genito-urinary
+                    tract infections (for example: pyelonephritis, cystitis and urethritis). &bull; Skin and soft tissue
+                    infections (for example: furunculosis, pyoderma and impetigo). &bull; Gonorrhoea, acute
+                    uncomplicated gonococcal urethritis and cervicitis. Cefuroxime is also available as the sodium salt
+                    (SUPACEF) for parenteral administration. This permits the use of sequential therapy with the same
+                    antibiotic, when a change from parenteral to oral therapy is clinically indicated. Where appropriate
+                    CEFTUM (cefuroxime axetil) is effective when used following initial parenteral SUPACEF (cefuroxime
+                    sodium) in the treatment of pneumonia and acute exacerbations of chronic obstructive pulmonary
+                    disease.</p>
+                  <p><strong>POSOLOGY AND METHOD OF ADMINISTRATION:</strong> The usual course of therapy is seven days
+                    (range five to ten days). The duration of therapy should be determined by the type of infection and
+                    the response of the patient and should generally not be longer than recommended. CEFTUM tablets
+                    should be taken after food for optimum absorption. <strong>Adults and Children weighing more than 40
+                      kg:</strong> Acute tonsillitis and pharyngitis - 250 mg twice daily; Acute otitis media - 500 mg
+                    twice daily; Acute bacterial sinusitis, Acute exacerbations of chronic obstructive pulmonary disease
+                    and Community acquired pneumonia - 500 mg twice daily; Urinary tract infections – 250 - 500 mg twice
+                    daily; Uncomplicated gonorrhoea - single dose of 1,000 mg; Skin and soft tissue infections - 250 mg
+                    - 500 mg twice daily. <strong>Sequential therapy:</strong> Duration of both parenteral and oral
+                    therapy is determined by the severity of the infection and the clinical status of the patient.
+                    Pneumonia: 1,500 mg SUPACEF (cefuroxime sodium) three times a day or twice a day (intravenous [i.v.]
+                    or intramuscular [i.m.]) for 48 to 72 hours, followed by 500 mg twice a day CEFTUM oral therapy for
+                    7 to 10 days. Acute exacerbations of chronic obstructive pulmonary disease: 750 mg SUPACEF
+                    (cefuroxime sodium) three times a day or twice a day (i.v. or i.m.) for 48 to 72 hours, followed by
+                    500 mg twice a day CEFTUM oral therapy for 5 to 10 days. <strong>Children weighing between 20-40
+                      kg:</strong> CEFTUM tablets should not be crushed or split and are therefore unsuitable for
+                    treatment of patients, such as younger children, who cannot swallow whole tablets. Acute tonsillitis
+                    and pharyngitis - 250 mg twice daily; Acute otitis media, Acute bacterial sinusitis, Community
+                    acquired pneumonia, Urinary tract infections, Skin and soft tissue infections - 250 mg twice daily
+                    to 500 mg twice daily. <strong>Renal impairment:</strong> Cefuroxime is primarily excreted by the
+                    kidneys. In patients with markedly impaired renal function, it is recommended that the dosage of
+                    cefuroxime be reduced to compensate for its slower excretion. <strong>Hepatic impairment:</strong>
+                    There are no data available for patients with hepatic impairment. Since cefuroxime is primarily
+                    eliminated by the kidneys, the presence of hepatic dysfunction is expected to have no effect on the
+                    pharmacokinetics of cefuroxime.</p>
+                  <p><strong>CONTRAINDICATIONS:</strong> Known hypersensitivity to cephalosporin antibiotics.</p>
+                  <p><strong>SPECIAL WARNINGS AND PRECAUTIONS FOR USE: Hypersensitivity reactions:</strong> Special care
+                    is indicated in patients who have experienced an allergic reaction to penicillins or other
+                    beta-lactam antibiotics because there is a risk of cross-sensitivity. As with all beta-lactam
+                    antibacterial agents, serious and occasionally fatal hypersensitivity reactions have been reported.
+                    There have been reports of hypersensitivity reactions which progressed to Kounis syndrome (acute
+                    allergic coronary arteriospasm that can result in myocardial infarction). In case of severe
+                    hypersensitivity reactions, treatment with cefuroxime must be discontinued immediately and adequate
+                    emergency measures must be initiated. <strong>Overgrowth of non-susceptible microorganisms:</strong>
+                    As with other antibiotics, use of CEFTUM may result in the overgrowth of Candida. Prolonged use may
+                    also result in the overgrowth of other non-susceptible organisms (e.g. enterococci and Clostridium
+                    difficile), which may require interruption of treatment. Pseudomembranous colitis has been reported
+                    with the use of antibiotics and may range in severity from mild to life-threatening. Therefore, it
+                    is important to consider its diagnosis in patients who develop diarrhoea during or after antibiotic
+                    use. If prolonged or significant diarrhoea occurs or the patient experiences abdominal cramps,
+                    treatment should be discontinued immediately and the patient investigated further.
+                    <strong>Sequential therapy:</strong> With a sequential therapy regime, the timing of change to oral
+                    therapy is determined by severity of the infection, clinical status of the patient and
+                    susceptibility of the pathogens involved. If there is no clinical improvement within 72 hours, then
+                    the parenteral course of treatment must be continued.</p>
+                  <p><strong>UNDESIRABLE EFFECTS: Common (&ge;1/100 to &lt;1/10):</strong> Candida overgrowth,
+                    eosinophilia, headache, dizziness, gastrointestinal disturbances including diarrhoea, nausea,
+                    abdominal pain, transient increases of hepatic enzyme levels [ALT (SGPT), AST (SGOT), LDH].
+                    <strong>Uncommon (&ge;1/1000 to &lt;1/100):</strong> Positive Coombs’ test, thrombocytopenia,
+                    leukopenia (sometimes profound), skin rashes, vomiting. <strong>Rare (&ge;1/10,000 to
+                      &lt;1/1000):</strong> Urticaria, pruritus, pseudomembranous colitis. <strong>Very rare
+                      (&lt;1/10,000):</strong> Haemolytic anaemia, Kounis syndrome, drug fever, serum sickness,
+                    anaphylaxis, jaundice (predominantly cholestatic), hepatitis, erythema multiforme, Stevens-Johnson
+                    syndrome, toxic epidermal necrolysis (exanthematic necrolysis).</p>
+                </div>
+
+                <div class="pi-footer-note">
+                  <p><strong>CEF/API/IN updated 28 Jul 2026</strong></p>
+                  <p>For the use only of a registered medical practitioner or a hospital or a laboratory. Trademarks are
+                    owned by or licensed to the GSK group of companies. Refer to full prescribing information before
+                    use. Registered medical practitioners can refer company website <a
+                      href="http://india-pharma.gsk.com/en-in/products/prescribing-information/"
+                      target="_blank">http://india-pharma.gsk.com/en-in/products/prescribing-information/</a> for full
+                    Product Information. Please report adverse events with any GSK product to the company at <a
+                      href="mailto:india.pharmacovigilance@gsk.com">india.pharmacovigilance@gsk.com</a> &copy;2026 GSK
+                    group of companies or its licensor. For more information, please contact: GlaxoSmithKline
+                    Pharmaceuticals Limited, Dr. Annie Besant Road, Worli, Mumbai – 400030 (India).</p>
+                  <div class="pi-cl-row">
+                    <span>CL code: PM-IN-CFA-EDTL-260004 | Date of preparation: July 2026</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bottom Navigation Bar Hotspots on Slide -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             CHAPTER 5: Thank you for Creating Ripples of Recovery
+             ========================================================================== -->
+
+        <!-- SLIDE 21 (Page 21): Chapter 5 Hub -->
+        <section class="slide" id="slide-21">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_21.png" alt="Thank You Chapter Hub" class="slide-img">
+            <!-- 5 Interactive Chapter Bubbles -->
+            <div class="hotspot hs-bubble-1-ripples" onclick="openChapter(1);"
+              title="Initiating Ripples of Recovery (Pages 2-5)"></div>
+            <div class="hotspot hs-bubble-center" onclick="openChapter(3);"
+              title="A Case of URTI: Clinical Management (Pages 12-15)"></div>
+            <div class="hotspot hs-bubble-right" onclick="openChapter(2);"
+              title="A Case of Bacterial RTI and Treatment (Pages 7-10)"></div>
+            <div class="hotspot hs-bubble-4-aecopd" onclick="openChapter(4);" title="A Case of AECOPD (Pages 17-20)">
+            </div>
+            <div class="hotspot hs-bubble-5-thankyou" onclick="openChapter(5);" title="Thank You Doctor (Pages 22-23)">
+            </div>
+            <!-- Bottom Navigation Bar Hotspots -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 22 (Page 22): Subpage 1 of Chapter 5 -->
+        <section class="slide" id="slide-22">
+          <div class="slide-img-container">
+            <img src="media/slides/slide_22.png" alt="Thank You Doctor" class="slide-img">
+
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 23 (Page 23): Prescribing Information & References -->
+        <section class="slide" id="slide-23">
+          <div class="pi-slide-wrapper">
+            <div class="pi-slide-card">
+              <div class="pi-slide-content">
+
+                <div class="pi-refs-block">
+                  <span class="pi-section-heading">References:</span>
+                  <ol>
+                    <li>Ceftum Tablets Prescribing Information_Version:CEF-CL-PI-IN-2026-01 revised on 24-JUL-2026.</li>
+                    <li>Timsit JF, Ling L, de Montmollin E, Bracht H, Conway-Morris A, De Bus L, Falcone M, Harris PNA,
+                      Machado FR, Paiva JA, Paterson DL, Poulakou G, Roberts JA, Roger C, Shorr AF, Tabah A, Lipman J.
+                      Antibiotic therapy for severe bacterial infections. <em>Intensive Care Med</em>. 2025
+                      Oct;51(10):1867-1885. doi: 10.1007/s00134-025-08063-0. Epub 2025 Sep 1. PMID: 40888899.</li>
+                    <li>Using medication: Learn More – Using antibiotics correctly and avoiding resistance. NIH
+                      bookshelf [Updated 2025 Dec 11]. Available at: Using medication: Learn More – Using antibiotics
+                      correctly and avoiding resistance - InformedHealth.… Accessed on: 18-06-2026.</li>
+                  </ol>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Key Safety Information for Ceftum:<sup>1</sup></span>
+                  <p><strong>Contraindications:</strong> Contraindicated in patients with known hypersensitivity to
+                    cephalosporin antibiotics. <strong>Special warnings and precautions for use:</strong> It should be
+                    administered with caution during the early months of pregnancy. Special care is indicated in
+                    patients who have experienced an allergic reaction to penicillins or other beta-lactams. Use of
+                    CEFTUM may result in the overgrowth of Candida. Prolonged use may also result in the overgrowth of
+                    other non-susceptible organisms (e.g. enterococci and Clostridium difficile), which may require
+                    interruption of treatment. In case of sequential therapy regime, if there is no clinical improvement
+                    within 72 hours, then the parenteral course of treatment must be continued. In patients with
+                    markedly renal impairment, dose needs to be adjusted. <strong>Undesirable effects:</strong> The most
+                    common (&ge;1/100 to &lt;1/10) side effects includes candida overgrowth, eosinophilia, headache,
+                    dizziness, gastrointestinal disturbances including diarrhoea, nausea, abdominal pain, transient
+                    increases of hepatic enzyme levels.</p>
+                </div>
+
+                <div class="pi-para">
+                  <span class="pi-section-heading">Abbreviated Prescribing Information of CEFTUM TABLETS</span>
+                  <p style="font-weight:600; margin-bottom:3px;">(Cefuroxime Axetil Tablets IP 250/500mg)</p>
+                  <p><strong>ACTIVE INGREDIENTS:</strong> Each 250 mg, 500 mg film coated tablet contains cefuroxime (as
+                    cefuroxime axetil IP) 250 mg, 500 mg respectively.</p>
+                  <p><strong>THERAPEUTIC INDICATIONS:</strong> Cefuroxime axetil is an oral prodrug of the bactericidal
+                    cephalosporin antibiotic cefuroxime, which is resistant to most beta-lactamases and is active
+                    against a wide range of Gram-positive and Gram-negative organisms. It is indicated for the treatment
+                    of infections caused by susceptible bacteria. Susceptibility to cefuroxime axetil will vary with
+                    geography and time, and it should be used in accordance with local official antibiotic prescribing
+                    guidelines and local susceptibility data. <strong>Indications include:</strong> &bull; Upper
+                    respiratory tract infections (for example: ear, nose and throat infections, such as otitis media,
+                    sinusitis, tonsillitis and pharyngitis). &bull; Lower respiratory tract infections (for example:
+                    pneumonia, acute exacerbations of chronic obstructive pulmonary disease). &bull; Genito-urinary
+                    tract infections (for example: pyelonephritis, cystitis and urethritis). &bull; Skin and soft tissue
+                    infections (for example: furunculosis, pyoderma and impetigo). &bull; Gonorrhoea, acute
+                    uncomplicated gonococcal urethritis and cervicitis. Cefuroxime is also available as the sodium salt
+                    (SUPACEF) for parenteral administration. This permits the use of sequential therapy with the same
+                    antibiotic, when a change from parenteral to oral therapy is clinically indicated. Where appropriate
+                    CEFTUM (cefuroxime axetil) is effective when used following initial parenteral SUPACEF (cefuroxime
+                    sodium) in the treatment of pneumonia and acute exacerbations of chronic obstructive pulmonary
+                    disease.</p>
+                  <p><strong>POSOLOGY AND METHOD OF ADMINISTRATION:</strong> The usual course of therapy is seven days
+                    (range five to ten days). The duration of therapy should be determined by the type of infection and
+                    the response of the patient and should generally not be longer than recommended. CEFTUM tablets
+                    should be taken after food for optimum absorption. <strong>Adults and Children weighing more than 40
+                      kg:</strong> Acute tonsillitis and pharyngitis - 250 mg twice daily; Acute otitis media - 500 mg
+                    twice daily; Acute bacterial sinusitis, Acute exacerbations of chronic obstructive pulmonary disease
+                    and Community acquired pneumonia - 500 mg twice daily; Urinary tract infections – 250 - 500 mg twice
+                    daily; Uncomplicated gonorrhoea - single dose of 1,000 mg; Skin and soft tissue infections - 250 mg
+                    - 500 mg twice daily. <strong>Sequential therapy:</strong> Duration of both parenteral and oral
+                    therapy is determined by the severity of the infection and the clinical status of the patient.
+                    Pneumonia: 1,500 mg SUPACEF (cefuroxime sodium) three times a day or twice a day (intravenous [i.v.]
+                    or intramuscular [i.m.]) for 48 to 72 hours, followed by 500 mg twice a day CEFTUM oral therapy for
+                    7 to 10 days. Acute exacerbations of chronic obstructive pulmonary disease: 750 mg SUPACEF
+                    (cefuroxime sodium) three times a day or twice a day (i.v. or i.m.) for 48 to 72 hours, followed by
+                    500 mg twice a day CEFTUM oral therapy for 5 to 10 days. <strong>Children weighing between 20-40
+                      kg:</strong> CEFTUM tablets should not be crushed or split and are therefore unsuitable for
+                    treatment of patients, such as younger children, who cannot swallow whole tablets. Acute tonsillitis
+                    and pharyngitis - 250 mg twice daily; Acute otitis media, Acute bacterial sinusitis, Community
+                    acquired pneumonia, Urinary tract infections, Skin and soft tissue infections - 250 mg twice daily
+                    to 500 mg twice daily. <strong>Renal impairment:</strong> Cefuroxime is primarily excreted by the
+                    kidneys. In patients with markedly impaired renal function, it is recommended that the dosage of
+                    cefuroxime be reduced to compensate for its slower excretion. <strong>Hepatic impairment:</strong>
+                    There are no data available for patients with hepatic impairment. Since cefuroxime is primarily
+                    eliminated by the kidneys, the presence of hepatic dysfunction is expected to have no effect on the
+                    pharmacokinetics of cefuroxime.</p>
+                  <p><strong>CONTRAINDICATIONS:</strong> Known hypersensitivity to cephalosporin antibiotics.</p>
+                  <p><strong>SPECIAL WARNINGS AND PRECAUTIONS FOR USE: Hypersensitivity reactions:</strong> Special care
+                    is indicated in patients who have experienced an allergic reaction to penicillins or other
+                    beta-lactam antibiotics because there is a risk of cross-sensitivity. As with all beta-lactam
+                    antibacterial agents, serious and occasionally fatal hypersensitivity reactions have been reported.
+                    There have been reports of hypersensitivity reactions which progressed to Kounis syndrome (acute
+                    allergic coronary arteriospasm that can result in myocardial infarction). In case of severe
+                    hypersensitivity reactions, treatment with cefuroxime must be discontinued immediately and adequate
+                    emergency measures must be initiated. <strong>Overgrowth of non-susceptible microorganisms:</strong>
+                    As with other antibiotics, use of CEFTUM may result in the overgrowth of Candida. Prolonged use may
+                    also result in the overgrowth of other non-susceptible organisms (e.g. enterococci and Clostridium
+                    difficile), which may require interruption of treatment. Pseudomembranous colitis has been reported
+                    with the use of antibiotics and may range in severity from mild to life-threatening. Therefore, it
+                    is important to consider its diagnosis in patients who develop diarrhoea during or after antibiotic
+                    use. If prolonged or significant diarrhoea occurs or the patient experiences abdominal cramps,
+                    treatment should be discontinued immediately and the patient investigated further.
+                    <strong>Sequential therapy:</strong> With a sequential therapy regime, the timing of change to oral
+                    therapy is determined by severity of the infection, clinical status of the patient and
+                    susceptibility of the pathogens involved. If there is no clinical improvement within 72 hours, then
+                    the parenteral course of treatment must be continued.</p>
+                  <p><strong>UNDESIRABLE EFFECTS: Common (&ge;1/100 to &lt;1/10):</strong> Candida overgrowth,
+                    eosinophilia, headache, dizziness, gastrointestinal disturbances including diarrhoea, nausea,
+                    abdominal pain, transient increases of hepatic enzyme levels [ALT (SGPT), AST (SGOT), LDH].
+                    <strong>Uncommon (&ge;1/1000 to &lt;1/100):</strong> Positive Coombs’ test, thrombocytopenia,
+                    leukopenia (sometimes profound), skin rashes, vomiting. <strong>Rare (&ge;1/10,000 to
+                      &lt;1/1000):</strong> Urticaria, pruritus, pseudomembranous colitis. <strong>Very rare
+                      (&lt;1/10,000):</strong> Haemolytic anaemia, Kounis syndrome, drug fever, serum sickness,
+                    anaphylaxis, jaundice (predominantly cholestatic), hepatitis, erythema multiforme, Stevens-Johnson
+                    syndrome, toxic epidermal necrolysis (exanthematic necrolysis).</p>
+                </div>
+
+                <div class="pi-footer-note">
+                  <p><strong>CEF/API/IN updated 28 Jul 2026</strong></p>
+                  <p>For the use only of a registered medical practitioner or a hospital or a laboratory. Trademarks are
+                    owned by or licensed to the GSK group of companies. Refer to full prescribing information before
+                    use. Registered medical practitioners can refer company website <a
+                      href="http://india-pharma.gsk.com/en-in/products/prescribing-information/"
+                      target="_blank">http://india-pharma.gsk.com/en-in/products/prescribing-information/</a> for full
+                    Product Information. Please report adverse events with any GSK product to the company at <a
+                      href="mailto:india.pharmacovigilance@gsk.com">india.pharmacovigilance@gsk.com</a> &copy;2026 GSK
+                    group of companies or its licensor. For more information, please contact: GlaxoSmithKline
+                    Pharmaceuticals Limited, Dr. Annie Besant Road, Worli, Mumbai – 400030 (India).</p>
+                  <div class="pi-cl-row">
+                    <span>CL code: PM-IN-CFA-EDTL-260004 | Date of preparation: July 2026</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bottom Navigation Bar Hotspots on Slide -->
+            <div class="hotspot hs-nav-home" onclick="goToPage(1);" title="Home Hub"></div>
+            <div class="hotspot hs-nav-pi" onclick="openCorrespondingPI();" title="Prescribing Information"></div>
+            <div class="hotspot hs-nav-ref" onclick="openModal('modalRef');" title="References"></div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         VEEVA QUICKLINK CONTROLS BAR (Bottom Bar)
+         ========================================================================== -->
+    <div class="veeva-bottom-bar">
+      <div class="quicklinks-group">
+        <button class="ql-icon-btn" id="btnHome" title="Home"><i class="fa-solid fa-house"></i></button>
+        <button class="ql-icon-btn" id="btnMenu" title="Menu"><i class="fa-solid fa-layer-group"></i></button>
+        <button class="ql-icon-btn" id="btnPI" title="Prescribing Info"><span
+            style="font-weight:bold; font-size:13px;">PI</span></button>
+        <button class="ql-icon-btn" id="btnRef" title="References"><i class="fa-regular fa-file-lines"></i></button>
+      </div>
+
+      <div class="gsk-pdf-logo-lockup">
+        <img src="media/ceftum_logo_clean.png" alt="CEFTUM">
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         MODALS (References, Menu)
+         ========================================================================== -->
+    <!-- References Modal -->
+    <div class="modal-overlay" id="modalRef">
+      <div class="modal-card">
+        <div class="modal-header">
+          <span>References &bull; Ceftum Monsoon RTI eDA</span>
+          <button class="modal-close-btn" onclick="closeModal('modalRef')">&times;</button>
+        </div>
+        <div class="modal-body">
+          <ol style="padding-left:18px; line-height:1.6; font-size:11.5px;">
+            <li>Ceftum Tablets Prescribing Information_Version:CEF-CL-PI-IN-2026-01 revised on 24-JUL-2026.</li>
+            <li>Balaji V, Singh V, Nijhara P, et al. Antimicrobial susceptibility patterns of H. influenzae and S.
+              pneumoniae in RTIs in India. J Clin Diagn Res. 2025;19(2).</li>
+            <li>Suresh M, Kumar MK. Expert opinion on oral antibiotics for RTIs and otitis media in Indian settings. Int
+              J Curr Microbiol App Sci. 2024;13(1):33-41.</li>
+            <li>Omole AE, Awosika AO, Patel P. Cefuroxime. In: StatPearls Publishing; Updated 2024. Accessed Jan 2026.
+            </li>
+            <li>Gupta H, et al. Is empirical use of cefuroxime and clavulanic acid rational? J Glob Antimicrob Resist.
+              2019;16:150-151.</li>
+            <li>Kaneria M, et al. Position of oral cephalosporins and FDCs in guideline recommendations. Asian J Med
+              Sci. 2023;14(9):281–291.</li>
+            <li>National Treatment Guidelines for Antimicrobial Use in Infectious Diseases. 3rd ed. NCDC &amp; ICMR;
+              2025.</li>
+            <li>Pakes GE, Graham JA, Rauch AM, Collins JJ. Cefuroxime axetil in the treatment of sinusitis. Arch Fam
+              Med. 1994;3(2):165-175.</li>
+            <li>Prasad P, Bhat S. Clinicomicrobiological study of community-acquired pneumonia. Lung India.
+              2017;34(5):491-492.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Navigator Modal (Structured by Chapters & Subpages) -->
+    <div class="modal-overlay" id="modalMenu">
+      <div class="modal-card" style="width:84%;">
+        <div class="modal-header">
+          <span>Slide Navigator &bull; Chapters &amp; Subpages</span>
+          <button class="modal-close-btn" onclick="closeModal('modalMenu')">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Chapter 1 -->
+          <div class="chapter-nav-block">
+            <div class="chapter-nav-header">
+              <i class="fa-solid fa-water" style="color:var(--accent-cyan);"></i> Chapter 1: Initiating Ripples of
+              Recovery
+            </div>
+            <div class="chapter-pills-row">
+              <button class="chapter-subpage-btn hub-btn" onclick="goToPage(1); closeModal('modalMenu');">Page 1
+                (Hub)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(2); closeModal('modalMenu');">Page 2 (Monsoon
+                Burden)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(3); closeModal('modalMenu');">Page 3 (Legacy &amp;
+                Ripple)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(4); closeModal('modalMenu');">Page 4 (Efficacy
+                Pillars)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(5); closeModal('modalMenu');">Page 5 (Key Safety
+                &amp; PI)</button>
+            </div>
+          </div>
+
+          <!-- Chapter 2 -->
+          <div class="chapter-nav-block">
+            <div class="chapter-nav-header">
+              <i class="fa-solid fa-user-doctor" style="color:var(--primary-navy);"></i> Chapter 2: A Case of Bacterial
+              RTI and Treatment
+            </div>
+            <div class="chapter-pills-row">
+              <button class="chapter-subpage-btn hub-btn" onclick="goToPage(6); closeModal('modalMenu');">Page 6
+                (Hub)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(7); closeModal('modalMenu');">Page 7 (Case 1: Rishi,
+                31 Yrs)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(8); closeModal('modalMenu');">Page 8 (Clinical
+                Evidence)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(9); closeModal('modalMenu');">Page 9 (Legacy &amp;
+                Ripple)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(10); closeModal('modalMenu');">Page 10 (PI &amp;
+                References)</button>
+            </div>
+          </div>
+
+          <!-- Chapter 3 -->
+          <div class="chapter-nav-block">
+            <div class="chapter-nav-header">
+              <i class="fa-solid fa-head-side-mask" style="color:var(--gsk-orange);"></i> Chapter 3: A Case of URTI:
+              Clinical Management
+            </div>
+            <div class="chapter-pills-row">
+              <button class="chapter-subpage-btn hub-btn" onclick="goToPage(11); closeModal('modalMenu');">Page 11
+                (Hub)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(12); closeModal('modalMenu');">Page 12 (Case 2: Jay,
+                37 Yrs)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(13); closeModal('modalMenu');">Page 13 (Sinusitis
+                Trials Evidence)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(14); closeModal('modalMenu');">Page 14 (Legacy &amp;
+                Ripple)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(15); closeModal('modalMenu');">Page 15 (PI &amp;
+                References)</button>
+            </div>
+          </div>
+
+          <!-- Chapter 4 -->
+          <div class="chapter-nav-block">
+            <div class="chapter-nav-header">
+              <i class="fa-solid fa-lungs" style="color:#0D8040;"></i> Chapter 4: A Case of AECOPD
+            </div>
+            <div class="chapter-pills-row">
+              <button class="chapter-subpage-btn hub-btn" onclick="goToPage(16); closeModal('modalMenu');">Page 16
+                (Hub)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(17); closeModal('modalMenu');">Page 17 (Case 3:
+                Kunal, 40 Yrs)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(18); closeModal('modalMenu');">Page 18 (AECOPD
+                Evidence vs Azithro)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(19); closeModal('modalMenu');">Page 19 (Legacy &amp;
+                Ripple)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(20); closeModal('modalMenu');">Page 20 (PI &amp;
+                References)</button>
+            </div>
+          </div>
+
+          <!-- Chapter 5 -->
+          <div class="chapter-nav-block">
+            <div class="chapter-nav-header">
+              <i class="fa-solid fa-heart-pulse" style="color:#E11D48;"></i> Chapter 5: Thank You for Creating Ripples
+              of Recovery
+            </div>
+            <div class="chapter-pills-row">
+              <button class="chapter-subpage-btn hub-btn" onclick="goToPage(21); closeModal('modalMenu');">Page 21
+                (Hub)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(22); closeModal('modalMenu');">Page 22 (Doctor
+                Recognition)</button>
+              <button class="chapter-subpage-btn" onclick="goToPage(23); closeModal('modalMenu');">Page 23 (PI &amp;
+                References)</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

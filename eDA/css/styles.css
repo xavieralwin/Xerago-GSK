@@ -1,0 +1,566 @@
+/* ==========================================================================
+   Veeva Master Template (MT) 3.0 Compliant CSS
+   Brand: Ceftum Monsoon eDetailer (Cefuroxime Axetil) - Exact PDF Replica
+   Resolution: 1024 x 768 (Veeva iPad Standard)
+   ========================================================================== */
+
+/* Local Fonts */
+@font-face {
+  font-family: 'Arial';
+  src: url('../media/fonts/ArialMdm.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../media/fonts/Arial-BoldMT.otf') format('opentype');
+  font-weight: 700;
+}
+
+:root {
+  --primary-navy: #002D62;
+  --primary-blue: #004B87;
+  --accent-cyan: #0097D8;
+  --gsk-orange: #F36633;
+  --gold-accent: #E5A823;
+  --blue-gradient: linear-gradient(135deg, #002D62 0%, #005A9E 50%, #0097D8 100%);
+  --veeva-width: 1024px;
+  --veeva-height: 768px;
+  --content-radius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Veeva Main Container */
+.eda-container {
+  width: var(--veeva-width);
+  height: var(--veeva-height);
+  position: relative;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Veeva Keep-outs */
+.veeva-keepout-action {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 38px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.veeva-keepout-reaction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 38px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.veeva-keepout-swim {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  z-index: 15;
+  pointer-events: none;
+}
+
+/* Veeva MT 3.0 Content Frame */
+.content-frame {
+  position: absolute;
+  left: 30px;
+  top: 38px;
+  right: 30px;
+  bottom: 80px;
+  border-radius: var(--content-radius);
+  overflow: hidden;
+  background: #002D62;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.slides-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background: #002D62;
+  border-radius: var(--content-radius);
+  overflow: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.slide-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--content-radius);
+}
+
+/* Interactive Hotspot Layer */
+.hotspot {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.hotspot:hover {
+  background: rgba(0, 151, 216, 0.2);
+  box-shadow: 0 0 20px rgba(0, 151, 216, 0.4);
+}
+
+.hotspot:active {
+  background: rgba(0, 151, 216, 0.35);
+  transform: scale(0.96);
+}
+
+/* Exact Hub Bubble Hotspots (Slide 1, 6, 11, 16, 21) */
+/* Bubble 1 (Left): Initiating Ripples */
+.hs-bubble-1-ripples {
+  top: 32%;
+  left: 13%;
+  width: 24%;
+  height: 30%;
+}
+
+/* Bubble 2 (Center): A Case of Bacterial RTI and Treatment (Pages 7-10) */
+.hs-bubble-center {
+  top: 30%;
+  left: 38%;
+  width: 24%;
+  height: 30%;
+}
+
+/* Bubble 3 (Right): A Case of URTI: Clinical Management (Pages 12-15) */
+.hs-bubble-right {
+  top: 32%;
+  left: 63%;
+  width: 24%;
+  height: 30%;
+}
+
+/* Bubble 4 (Bottom-Left): A Case of AECOPD (Pages 17-20) */
+.hs-bubble-4-aecopd {
+  top: 56%;
+  left: 28%;
+  width: 24%;
+  height: 32%;
+}
+
+/* Bubble 5 (Bottom-Right): Thank You Doctor (Pages 22-23) */
+.hs-bubble-5-thankyou {
+  top: 56%;
+  left: 52%;
+  width: 24%;
+  height: 32%;
+}
+
+/* Case & Evidence Hotspots */
+.hs-case-pi-badge {
+  bottom: 2%;
+  right: 2%;
+  width: 10%;
+  height: 7%;
+  border-radius: 8px;
+}
+
+/* Veeva Bottom Navigation Bar */
+.veeva-bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  background: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.quicklinks-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ql-icon-btn {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid #64748B;
+  color: #475569;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.ql-icon-btn:hover,
+.ql-icon-btn.active {
+  border-color: var(--accent-cyan, #0E7490);
+  color: var(--accent-cyan, #0E7490);
+  background: #E1F0F8;
+  transform: translateY(-1px);
+}
+
+.ql-icon-btn:active {
+  transform: scale(0.95);
+}
+
+.slide-indicator {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0 4px;
+  background: #EDF5FA;
+  padding: 5px 14px;
+  border-radius: 12px;
+  border: 1px solid #CBD5E1;
+}
+
+/* Official Logo Lockup (Ceftum / GSK Lockup) */
+.gsk-pdf-logo-lockup,
+.gsk-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gsk-pdf-logo-lockup img,
+.gsk-brand-lockup img,
+.ceftum-logo-img {
+  height: 34px;
+  max-height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Modals */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 150;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-card {
+  width: 86%;
+  max-height: 84%;
+  background: #FFFFFF;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header {
+  background: var(--blue-gradient);
+  color: #FFFFFF;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+/* Chapter Sections in Menu Modal */
+.chapter-nav-block {
+  margin-bottom: 12px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.chapter-nav-header {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chapter-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chapter-subpage-btn {
+  background: #FFFFFF;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chapter-subpage-btn:hover {
+  background: var(--primary-navy);
+  color: #FFFFFF;
+  border-color: var(--primary-navy);
+  transform: translateY(-1px);
+}
+
+.chapter-subpage-btn.hub-btn {
+  background: #E1F0F8;
+  color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+}
+
+/* ==========================================================================
+   AUTHENTIC READABLE TEXT SLIDES (Slides 5, 10, 15, 20, 23)
+   Exact blue card container over slide background with crisp white typography
+   ========================================================================== */
+.pi-slide-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 26px 24px 6px 13px;
+  box-sizing: border-box;
+}
+
+#slide-5 .pi-slide-wrapper { background: #021a32 url('../media/slides/slide_5.png') center top / cover no-repeat; }
+#slide-10 .pi-slide-wrapper { background: #021a32 url('../media/slides/slide_10.png') center top / cover no-repeat; }
+#slide-15 .pi-slide-wrapper { background: #021a32 url('../media/slides/slide_15.png') center top / cover no-repeat; }
+#slide-20 .pi-slide-wrapper { background: #021a32 url('../media/slides/slide_20.png') center top / cover no-repeat; }
+#slide-23 .pi-slide-wrapper { background: #021a32 url('../media/slides/slide_23.png') center top / cover no-repeat; }
+
+.pi-slide-card {
+  width: 100%;
+  max-width: 924px;
+  height: 612px;
+  background: #247bb9;
+  background: linear-gradient(180deg, #2a83bd 0%, #1e6fa7 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 16px 22px;
+}
+
+.pi-slide-content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  font-family: Arial, "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 8.5px;
+  line-height: 1.36;
+  color: #FFFFFF;
+  padding-right: 8px;
+}
+
+.pi-slide-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pi-slide-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+
+.pi-slide-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 4px;
+}
+
+.pi-slide-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.pi-slide-content strong {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.pi-slide-content a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.pi-section-heading {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.pi-refs-block {
+  margin-bottom: 5px;
+}
+
+.pi-refs-block ol {
+  padding-left: 15px;
+  margin: 0;
+  font-size: 8px;
+  line-height: 1.34;
+  color: #FFFFFF;
+}
+
+.pi-refs-block li {
+  margin-bottom: 2px;
+}
+
+.pi-para {
+  font-size: 8px;
+  line-height: 1.35;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.pi-footer-note {
+  margin-top: 6px;
+  padding-top: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 7.5px;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+.pi-footer-note p {
+  margin-bottom: 2px;
+}
+
+.pi-cl-row {
+  margin-top: 4px;
+  font-size: 8px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.hs-nav-home {
+  position: absolute;
+  bottom: 2%;
+  left: 6.5%;
+  width: 4.8%;
+  height: 6.5%;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.hs-nav-pi {
+  position: absolute;
+  bottom: 2%;
+  left: 11.5%;
+  width: 4.8%;
+  height: 6.5%;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.hs-nav-ref {
+  position: absolute;
+  bottom: 2%;
+  left: 16.5%;
+  width: 4.8%;
+  height: 6.5%;
+  border-radius: 50%;
+  z-index: 20;
+}
