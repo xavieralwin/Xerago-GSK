@@ -264,6 +264,28 @@ html, body {
   transform: scale(0.95);
 }
 
+.quicklinks-group .ql-icon-btn {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.quicklinks-group .ql-icon-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.quicklinks-group .ql-icon-btn:hover,
+.quicklinks-group .ql-icon-btn.active {
+  border: none;
+  background: transparent;
+  transform: scale(1.08);
+}
+
 .slide-indicator {
   font-size: 11.5px;
   font-weight: 700;
