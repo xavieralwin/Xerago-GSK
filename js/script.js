@@ -49,10 +49,19 @@ function initVideoPlayback() {
 function setupEventListeners() {
   if (btnHome) btnHome.addEventListener('click', () => goToSlide(0));
   if (btnMenu) btnMenu.addEventListener('click', () => openModal('modalMenu'));
-  if (btnPI) btnPI.addEventListener('click', () => goToSlide(7));
+  if (btnPI) btnPI.addEventListener('click', () => openModal('modalPI'));
   if (btnRef) btnRef.addEventListener('click', () => openModal('modalRef'));
   if (btnPrev) btnPrev.addEventListener('click', () => prevSlide());
   if (btnNext) btnNext.addEventListener('click', () => nextSlide());
+
+  // Close modals on clicking backdrop
+  document.querySelectorAll('.modal-overlay').forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('open');
+      }
+    });
+  });
 
   // Keyboard Navigation
   document.addEventListener('keydown', (e) => {
@@ -186,8 +195,7 @@ function updateSlideState() {
   }
 
   if (btnPI) {
-    if (currentSlide >= 7) btnPI.classList.add('active');
-    else btnPI.classList.remove('active');
+    btnPI.classList.remove('active');
   }
 }
 
@@ -200,3 +208,20 @@ function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) modal.classList.remove('open');
 }
+
+const video = document.getElementById("myVideo");
+const button = document.getElementById("playPause");
+
+button.addEventListener("click", () => {
+    if (video.paused) {
+        video.play();
+        button.textContent = "Pause";
+    } else {
+        video.pause();
+        button.textContent = "Play";
+    }
+});
+
+video.addEventListener("ended", () => {
+    button.textContent = "Play";
+});

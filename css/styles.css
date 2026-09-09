@@ -106,7 +106,7 @@
   --keepout-action-h: 85px;
   --keepout-reaction-w: 115px;
   --keepout-reaction-h: 385px;
-  --keepout-swim-w: 115px;
+  --keepout-swim-w: 30px;
   --keepout-swim-h: 125px;
   --quicklink-hit: 44px;
 }
@@ -120,7 +120,8 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-img, video {
+img,
+video {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -1719,7 +1720,7 @@ body {
 }
 
 .ref-title {
-  font-family: 'Clash Display', 'Myriad Pro', Arial, sans-serif;
+  font-family: 'Arial', 'Myriad Pro', sans-serif;
   font-size: 26px;
   font-weight: 700;
   color: #1E293B;
@@ -1774,35 +1775,35 @@ body {
 
 .pi-header-area {
   text-align: center;
-  margin-top: 4px;
-  margin-bottom: 12px;
+  margin-top: 2px;
+  margin-bottom: 16px;
 }
 
 .pi-main-title {
-  font-family: 'Clash Display', 'Myriad Pro', Arial, sans-serif;
-  font-size: 26px;
+  font-family: 'Arial', 'Myriad Pro', sans-serif;
+  font-size: 28px;
   font-weight: 700;
   color: #1E293B;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.2px;
 }
 
 .pi-body-scroll {
   flex: 1;
   overflow-y: auto;
-  padding-right: 6px;
+  padding-right: 8px;
 }
 
 .pi-ksi-list {
   font-family: Arial, sans-serif;
-  font-size: 12.5px;
-  line-height: 1.45;
+  font-size: 13px;
+  line-height: 1.5;
   color: #1E293B;
-  padding-left: 18px;
-  margin-bottom: 10px;
+  padding-left: 20px;
+  margin-bottom: 12px;
 }
 
 .pi-ksi-list li {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .pi-legal-banner {
@@ -1810,28 +1811,28 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: #1E293B;
-  margin: 10px 0 6px;
+  margin: 12px 0 8px;
 }
 
 .pi-section-title {
-  font-family: 'Clash Display', 'Myriad Pro', Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
   font-weight: 700;
   color: #1E293B;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   text-decoration: underline;
 }
 
 .pi-content-text {
   font-family: Arial, sans-serif;
-  font-size: 11px;
-  line-height: 1.45;
+  font-size: 11.5px;
+  line-height: 1.5;
   color: #334155;
   text-align: justify;
 }
 
 .pi-content-text p {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 /* ==========================================================================
@@ -1929,6 +1930,27 @@ body {
   transform: scale(1.05);
 }
 
+.quicklinks-group .ql-icon-btn {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.quicklinks-group .ql-icon-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.quicklinks-group .ql-icon-btn:hover,
+.quicklinks-group .ql-icon-btn.active {
+  border: none;
+  transform: scale(1.08);
+}
+
 .gsk-pdf-logo-lockup {
   display: flex;
   align-items: center;
@@ -2003,6 +2025,115 @@ body {
   line-height: 1.55;
 }
 
+/* Reference Modal Popup (Matching PDF / Slide Artwork exactly) */
+.modal-card-ref {
+  width: 964px;
+  max-width: 964px;
+  height: 642px;
+  max-height: 642px;
+  position: relative;
+  background: radial-gradient(ellipse 130% 110% at 50% 25%, #FFFFFF 0%, #F5FAF6 50%, #E2EFE4 100%);
+  border-radius: var(--content-radius, 15px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  border: 1px solid #CBD5E1;
+  padding: 30px 48px 36px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-card-ref .ref-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 2;
+  padding: 0 6px;
+}
+
+.modal-card-ref .ref-header {
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.modal-card-ref .ref-title {
+  font-family: 'Arial', 'Myriad Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1E293B;
+  letter-spacing: -0.2px;
+}
+
+.modal-card-ref .gold-separator-bar {
+  width: 96%;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(226, 161, 28, 0) 0%, #E2A11C 15%, #F3C84D 50%, #CE880A 85%, rgba(206, 136, 10, 0) 100%);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.modal-card-ref .ref-list {
+  font-family: Arial, sans-serif;
+  font-size: 13.5px;
+  color: #334155;
+  line-height: 1.62;
+  padding-left: 28px;
+  margin: 0;
+}
+
+.modal-card-ref .ref-list li {
+  margin-bottom: 10px;
+  padding-left: 6px;
+}
+
+.modal-card-ref .art-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.modal-card-ref .art-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.modal-close-btn-ref {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid #CBD5E1;
+  color: #475569;
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+}
+
+.modal-close-btn-ref:hover {
+  background: #0D8040;
+  color: #FFFFFF;
+  border-color: #0D8040;
+  transform: scale(1.08);
+}
+
 .video-container {
   width: 100%;
 
@@ -2012,4 +2143,24 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+}
+
+.play-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
 }
