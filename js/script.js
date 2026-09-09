@@ -16,6 +16,7 @@ const btnPrev = document.getElementById('btnPrev');
 const btnNext = document.getElementById('btnNext');
 
 const slide1Video = document.getElementById('slide1Video');
+const videoPlayPauseBtn = document.getElementById('videoPlayPauseBtn');
 
 document.addEventListener('DOMContentLoaded', () => {
   setupEventListeners();
@@ -23,16 +24,72 @@ document.addEventListener('DOMContentLoaded', () => {
   initVideoPlayback();
 });
 
+function toggleVideoPlayback() {
+  if (!slide1Video) return;
+  if (slide1Video.paused || slide1Video.ended) {
+    if (slide1Video.ended) {
+      slide1Video.currentTime = 0;
+    }
+    slide1Video.play().then(updateVideoBtnUI).catch(updateVideoBtnUI);
+  } else {
+    slide1Video.pause();
+    updateVideoBtnUI();
+  }
+}
+
+function updateVideoBtnUI() {
+  if (!slide1Video) return;
+  const container = slide1Video.closest('.video-container');
+  const iconPlay = videoPlayPauseBtn ? videoPlayPauseBtn.querySelector('.icon-play') : null;
+  const iconPause = videoPlayPauseBtn ? videoPlayPauseBtn.querySelector('.icon-pause') : null;
+
+  if (slide1Video.paused || slide1Video.ended) {
+    if (container) container.classList.remove('playing');
+    if (iconPlay) iconPlay.style.display = 'block';
+    if (iconPause) iconPause.style.display = 'none';
+    if (videoPlayPauseBtn) {
+      videoPlayPauseBtn.setAttribute('title', 'Play Video');
+      videoPlayPauseBtn.setAttribute('aria-label', 'Play Video');
+    }
+  } else {
+    if (container) container.classList.add('playing');
+    if (iconPlay) iconPlay.style.display = 'none';
+    if (iconPause) iconPause.style.display = 'block';
+    if (videoPlayPauseBtn) {
+      videoPlayPauseBtn.setAttribute('title', 'Pause Video');
+      videoPlayPauseBtn.setAttribute('aria-label', 'Pause Video');
+    }
+  }
+}
+
 function initVideoPlayback() {
   if (slide1Video) {
-    // Attempt play on load
+    slide1Video.addEventListener('play', updateVideoBtnUI);
+    slide1Video.addEventListener('pause', updateVideoBtnUI);
+    slide1Video.addEventListener('ended', updateVideoBtnUI);
+
+    if (videoPlayPauseBtn) {
+      videoPlayPauseBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleVideoPlayback();
+      });
+    }
+
+    // Toggle play/pause when clicking directly on video
+    slide1Video.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleVideoPlayback();
+    });
+
+    // Attempt autoplay on load
     const promise = slide1Video.play();
     if (promise !== undefined) {
-      promise.catch(() => {
-        // Autoplay policy prevented immediate playback; play on first user interaction
+      promise.then(updateVideoBtnUI).catch(() => {
+        updateVideoBtnUI();
+        // Fallback: start on first interaction if blocked by autoplay policy
         const startPlayOnInteraction = () => {
           if (currentSlide === 0) {
-            slide1Video.play().catch(() => {});
+            slide1Video.play().then(updateVideoBtnUI).catch(() => {});
           }
           document.removeEventListener('click', startPlayOnInteraction);
           document.removeEventListener('touchstart', startPlayOnInteraction);
@@ -188,9 +245,10 @@ function updateSlideState() {
 
   if (slide1Video) {
     if (currentSlide === 0) {
-      slide1Video.play().catch(() => {});
+      slide1Video.play().then(updateVideoBtnUI).catch(updateVideoBtnUI);
     } else {
       slide1Video.pause();
+      updateVideoBtnUI();
     }
   }
 
@@ -208,20 +266,3 @@ function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) modal.classList.remove('open');
 }
-
-const video = document.getElementById("myVideo");
-const button = document.getElementById("playPause");
-
-button.addEventListener("click", () => {
-    if (video.paused) {
-        video.play();
-        button.textContent = "Pause";
-    } else {
-        video.pause();
-        button.textContent = "Play";
-    }
-});
-
-video.addEventListener("ended", () => {
-    button.textContent = "Play";
-});

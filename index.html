@@ -29,10 +29,18 @@
         <section class="slide active" id="slide-1">
           <div class="full-img-slide">
             <div class="video-container">
-              <video id="slide1Video" controls="play-pause-only" playsinline>
+              <video id="slide1Video" playsinline preload="auto">
                 <source src="media/videos/slide1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
+              <button class="center-video-btn" id="videoPlayPauseBtn" aria-label="Play Video" title="Play Video">
+                <svg class="icon-play" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 18 10 L 54 32 L 18 54 Z" fill="#FFFFFF"/>
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+                  <path d="M 16 12 H 28 V 52 H 16 Z M 36 12 H 48 V 52 H 36 Z" fill="#FFFFFF"/>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
@@ -278,7 +286,7 @@
          ========================================================================== -->
     <div class="veeva-bottom-bar">
       <div class="quicklinks-group">
-        <button class="ql-icon-btn" title="Menu"><img src="media/icons/Layer.png" alt="Menu"></button>
+        <button class="ql-icon-btn" id="btnMenu" title="Menu"><img src="media/icons/Layer.png" alt="Menu"></button>
         <button class="ql-icon-btn" id="btnHome" title="Home"><img src="media/icons/home.png" alt="Home"></button>
         <button class="ql-icon-btn" id="btnPI" title="Prescribing Info"><img src="media/icons/PI.png" alt="Prescribing Information"></button>
         <button class="ql-icon-btn" id="btnRef" title="References"><img src="media/icons/refer.png" alt="References"></button>
