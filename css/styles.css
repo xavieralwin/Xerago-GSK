@@ -101,7 +101,7 @@
   --frame-left: 30px;
   --frame-top: 38px;
   --frame-right: 30px;
-  --frame-bottom: 88px;
+  --frame-bottom: 80px;
   --keepout-action-w: 315px;
   --keepout-action-h: 85px;
   --keepout-reaction-w: 115px;
@@ -354,7 +354,6 @@ body {
   color: #475569;
   z-index: 2;
   margin-top: auto;
-  padding: 0 22px 10px;
   flex-shrink: 0;
 }
 
@@ -472,7 +471,6 @@ body {
   display: block;
   font-size: 25px;
   font-weight: 700;
-  color: #008542;
 }
 
 #slide-2 .art-footer-note {
@@ -1954,12 +1952,19 @@ body {
 .gsk-pdf-logo-lockup {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .gsk-pdf-logo-lockup img {
   height: 32px;
-  min-width: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.gsk-pdf-logo-lockup .logo-bracket {
+  height: 28px;
+  width: auto;
+  min-width: unset;
   object-fit: contain;
 }
 
