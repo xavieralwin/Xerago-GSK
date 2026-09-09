@@ -2,10 +2,10 @@
  * Ceftum Monsoon eDetailer - Master Presentation Controller
  * Architecture: 5 Chapters with Subpages
  * - Chapter 1 (Hub Page 1): Subpages 2, 3, 4, 5
- * - Chapter 2 (Hub Page 6): Subpages 7, 8, 9, 10
- * - Chapter 3 (Hub Page 11): Subpages 12, 13, 14, 15
- * - Chapter 4 (Hub Page 16): Subpages 17, 18, 19, 20
- * - Chapter 5 (Hub Page 21): Subpages 22, 23
+ * - Chapter 2 (Hub Page 6): Subpages 7, 8, 9, 10 (A Case of Bacterial RTI and Treatment)
+ * - Chapter 3 (Hub Page 11): Subpages 12, 13, 14, 15 (A Case of URTI: Clinical Management)
+ * - Chapter 4 (Hub Page 16): Subpages 17, 18, 19, 20 (A Case of AECOPD)
+ * - Chapter 5 (Hub Page 21): Subpages 22, 23 (Thank you for Creating Ripples of Recovery)
  * Subpages return to the Main Hub (Page 1) after the last subpage.
  */
 
